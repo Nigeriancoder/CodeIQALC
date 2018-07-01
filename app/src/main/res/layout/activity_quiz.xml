@@ -1,0 +1,274 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context="com.example.android.codeiq.quiz"
+        android:weightSum="1">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context="com.example.android.codeiq.quiz">
+
+            <ImageView
+                android:id="@+id/photo_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/instructions"
+                android:scaleType="centerCrop"
+                android:layout_centerHorizontal="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#B3cc0000"
+                />
+
+            <TextView
+                android:id="@+id/title_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tech Trends"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_marginTop="52dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="25sp"
+            android:text="Enter your name:"
+            android:textColor="#cc0000"
+             />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal"
+            />
+
+        <TextView
+            android:id="@+id/text_viewA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Question 1. \nWho is the current CEO of Apple Inc?"
+            android:textColor="#cc0000"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/viewGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tim Cook"
+                android:onClick="onRadioButtonClick"
+                />
+            <RadioButton
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steve Jobs"
+                />
+
+            <RadioButton
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sundar Pichai"
+                />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/text_viewB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Question 2. \nTux the penguin is the mascot of which computer operating system?"
+            android:textColor="#cc0000"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/viewGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/button1B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mac"
+                />
+            <RadioButton
+                android:id="@+id/button2B"
+                android:onClick="onRadioButtonClick2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Linux"
+                />
+
+            <RadioButton
+                android:id="@+id/button3B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Windoews "
+                />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/text_viewC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Question 3. \nWhat did Apple’s 2007 iPhone really cement as standard??"
+            android:textColor="#cc0000"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/viewGroup3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/button1C"
+                android:onClick="onRadioButtonClick3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Touchscreens"
+                />
+            <RadioButton
+                android:id="@+id/button2C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USB Ports"
+                />
+
+            <RadioButton
+                android:id="@+id/button3C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buttons"
+                />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/text_viewD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Question 4. \nWhich Google operating system, unveiled in 2007, is designed primarily for touchscreen mobile devices?"
+            android:textColor="#cc0000"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/viewGroup4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/button1D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Google Auto"
+                />
+            <RadioButton
+                android:id="@+id/button2D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ChromeOS"
+                />
+
+            <RadioButton
+                android:id="@+id/button3D"
+                android:onClick="onRadioButtonClick4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android"
+                />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/text_view_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Would you like to recive more questions via email?"
+            android:textColor="#cc0000"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/yes_checkbox"
+            android:onClick="toastMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Yes"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context="com.example.android.codeiq.quiz">
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="30dp"
+                android:text="Submit"
+                android:textColor="#ffffff"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/shape"
+                android:id="@+id/submit"
+                android:layout_gravity="right" />
+
+            </RelativeLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
